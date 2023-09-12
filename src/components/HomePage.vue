@@ -1,24 +1,48 @@
 <template>
-  <div class="bg-becca-blue hover:bg-cyan-700 transition-colors duration-1000 hover:text-white text-black">
-    <p>
-      Hello!
-    </p>
+  <!-- Navbar Section -->
+  <div class="bg-gray-900 text-white h-10">
+    <ul class="flex  items-center flex-row justify-evenly h-full font-satisfy">
+      <li>
+        Home
+      </li>
+      <li>
+        About
+      </li>
+      <li>
+        Applications
+      </li>
+      <li>
+        Testimonials
+      </li>
+      <li>
+        Contact
+      </li>
+    </ul>
   </div>
-  <div class="flex px-10 justify-between">
-    <div class="w-1/8">
-      Box
-    </div>
-    <div class="w-1/4 text-center">
-      <div class="hover:animate-spin">
-        Box
-      </div>
-    </div>
-    <div class="w-1/4">
-      Box
-    </div>
-    <div class="w-1/4">
-      Box
-    </div>
+
+  <!-- Hero Section -->
+  <div>
+
+  </div>
+
+  <!-- About Section -->
+  <div>
+
+  </div>
+
+  <!-- Application Section -->
+  <div>
+
+  </div>
+
+  <!-- Testimonial Section -->
+  <div>
+
+  </div>
+
+  <!-- Contact Section -->
+  <div>
+
   </div>
 </template>
 

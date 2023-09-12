@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        'becca-blue': '#FF006064'
+
+      },
+      fontFamily: {
+        'satisfy': ['"Satisfy"', 'cursive']
       }
     },
   },
