@@ -10,8 +10,9 @@ export default {
 
       },
       fontFamily: {
-        'satisfy': ['"Satisfy"', 'cursive']
-      }
+        'satisfy': ['"Satisfy"', 'cursive'],
+        'montserrat': ["'Montserrat'", 'sans-serif']
+      },
     },
   },
   plugins: [],
