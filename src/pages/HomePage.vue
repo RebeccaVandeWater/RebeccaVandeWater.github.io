@@ -41,8 +41,8 @@
   </div>
 
   <!-- About Section -->
-  <div class="bg-slate-800 h-1/4">
-
+  <div class="bg-gray-800 h-1/3 flex p-5 overflow-x-scroll">
+    <SkillIcon :title="'Javascript ES6'" :img="javascriptLogo" />
   </div>
 
   <!-- Application Section -->
@@ -63,13 +63,18 @@
 
 
 <script>
+import SkillIcon from '../components/SkillIcon.vue';
+import javascriptLogo from '../assets/javascript.png';
 
 
 
 export default {
   setup() {
-    return {}
-  }
+    return {
+      javascriptLogo
+    };
+  },
+  components: { SkillIcon }
 }
 </script>
 
