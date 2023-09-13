@@ -41,8 +41,17 @@
   </div>
 
   <!-- About Section -->
-  <div class="bg-gray-800 h-1/3 flex p-5 overflow-x-scroll">
+  <div class="bg-gray-800 h-1/3 w-full flex flex-row p-5 overflow-x-auto">
     <SkillIcon :title="'Javascript ES6'" :img="javascriptLogo" />
+    <SkillIcon :title="'Vue.js'" :img="vueLogo" />
+    <SkillIcon :title="'Node.js'" :img="nodeLogo" />
+    <SkillIcon :title="'MongoDB'" :img="mongoLogo3" />
+    <SkillIcon :title="'C#'" :img="csharpLogo" />
+    <SkillIcon :title="'MySQL'" :img="sqlLogo" />
+    <SkillIcon :title="'HTML5'" :img="htmlLogo" />
+    <SkillIcon :title="'CSS3'" :img="cssLogo" />
+    <SkillIcon :title="'Tailwind'" :img="tailwindLogo" />
+    <SkillIcon :title="'Bootstrap'" :img="bootstrapLogo" />
   </div>
 
   <!-- Application Section -->
@@ -65,13 +74,33 @@
 <script>
 import SkillIcon from '../components/SkillIcon.vue';
 import javascriptLogo from '../assets/javascript.png';
-
-
+import vueLogo from '../assets/vue.png';
+import nodeLogo from '../assets/node.png';
+import sqlLogo from '../assets/sql.png';
+import mongoLogo1 from '../assets/mongo1.png';
+import mongoLogo2 from '../assets/mongo2.png';
+import mongoLogo3 from '../assets/mongo3.png';
+import csharpLogo from '../assets/csharp.png';
+import htmlLogo from '../assets/html.png';
+import cssLogo from '../assets/css.png';
+import bootstrapLogo from '../assets/bootstrap.png';
+import tailwindLogo from '../assets/tailwind.png'
 
 export default {
   setup() {
     return {
-      javascriptLogo
+      javascriptLogo,
+      vueLogo,
+      nodeLogo,
+      sqlLogo,
+      mongoLogo1,
+      mongoLogo2,
+      mongoLogo3,
+      csharpLogo,
+      htmlLogo,
+      cssLogo,
+      bootstrapLogo,
+      tailwindLogo
     };
   },
   components: { SkillIcon }

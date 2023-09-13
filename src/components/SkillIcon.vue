@@ -1,16 +1,19 @@
 <template>
-	<div onmouseenter="" class="text-center text-white font-medium grayscale hover:grayscale-0 relative z-10">
-		<img :src="img" :alt="title" :title="title" class="h-32">
-		<p>
+	<div class="text-center text-white font-medium relative m-5 min-w-fit group">
+		<div class="h-32 w-full bg-rose-600 blur-lg inset-0 absolute opacity-0 sm:block hidden group-hover:opacity-100"
+			id="skillIconShadow">
+		</div>
+		<img :src="img" :alt="title" :title="title"
+			class="h-32 object-contain object-center relative md:grayscale lg:grayscale group-hover:grayscale-0 ">
+		<p class="relative">
 			{{ title }}
 		</p>
-	</div>
-	<div class="h-40 w-32 bg-rose-600 blur-xl absolute hidden" id="skillIconShadow">
-		Test
 	</div>
 </template>
 
 <script>
+import { watchEffect } from 'vue'
+
 export default {
 	props: {
 		title: { type: String, required: true },
@@ -18,7 +21,12 @@ export default {
 	},
 
 	setup(props) {
+		watchEffect()
 		return {
+			hoverColor() {
+				let shadowElem = document.getElementById("skillIconShadow")
+				shadowElem.classList.remove('hidden')
+			}
 		}
 	}
 }
