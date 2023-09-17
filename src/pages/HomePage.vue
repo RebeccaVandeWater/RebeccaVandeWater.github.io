@@ -56,15 +56,27 @@
   </div>
 
   <!-- Application Section -->
-  <div>
-    <div class="flex justify-start">
-
+  <div class="h-2/3 flex flex-col">
+    <div class="flex justify-start my-20 p-5">
+      <ApplicationSummary :title="'JABB Book Club'"
+        :img="'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'"
+        :description="'An application based around creating and interacting with book clubs and book lists. Built on a development team of four, utilizing Scrum and Agile methods to organize team communication.'"
+        :skill1img="vueLogo" :skill1="'Vue.js'" :skill2img="csharpLogo" :skill2="'C#'" :skill3img="sqlLogo"
+        :skill3="'MySQL'" />
     </div>
-    <div class="flex justify-end">
-
+    <div class="flex justify-end my-20 p-5">
+      <ApplicationSummary :title="'Keepr'"
+        :img="'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'"
+        :description="'An application created as the final from CodeWorks. Build independently, it utilizes a MySQL database, Vue.js frontend, and C# DotNet backend.'"
+        :skill1img="vueLogo" :skill1="'Vue.js'" :skill2img="csharpLogo" :skill2="'C#'" :skill3img="sqlLogo"
+        :skill3="'MySQL'" />
     </div>
-    <div class="flex justify-start">
-
+    <div class="flex justify-start my-20 p-5">
+      <ApplicationSummary :title="'Tower'"
+        :img="'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'"
+        :description="'An application based around creating and interacting with in-person events. Built independently, it utilizes a MongoDB database, Vue.js frontend, and Node.js Express backend.'"
+        :skill1img="vueLogo" :skill1="'Vue.js'" :skill2img="nodeLogo" :skill2="'Node.js'" :skill3img="mongoLogo3"
+        :skill3="'MongoDB'" />
     </div>
   </div>
 
@@ -94,6 +106,8 @@ import htmlLogo from '../assets/html.png';
 import cssLogo from '../assets/css.png';
 import bootstrapLogo from '../assets/bootstrap.png';
 import tailwindLogo from '../assets/tailwind.png'
+import ApplicationSummary from '../components/ApplicationSummary.vue';
+import { computed } from 'vue';
 
 export default {
   setup() {
@@ -112,7 +126,7 @@ export default {
       tailwindLogo
     };
   },
-  components: { SkillIcon }
+  components: { SkillIcon, ApplicationSummary }
 }
 </script>
 
