@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import { watchEffect } from 'vue'
 
 export default {
 	props: {
@@ -20,13 +19,8 @@ export default {
 		img: { type: String, required: true }
 	},
 
-	setup(props) {
-		watchEffect()
+	setup() {
 		return {
-			hoverColor() {
-				let shadowElem = document.getElementById("skillIconShadow")
-				shadowElem.classList.remove('hidden')
-			}
 		}
 	}
 }
