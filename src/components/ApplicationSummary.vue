@@ -1,13 +1,13 @@
 <template>
-	<div class="flex w-5/6">
-		<div class="w-3/4 mr-3">
+	<div class="flex sm:flex-row flex-col w-5/6 items-center">
+		<div class="sm:w-5/6 sm:mr-5 mb-5 sm:mb-0">
 			<img :src="img" :alt="title" class="object-contain object-center">
 		</div>
-		<div class="w-full">
-			<p>
+		<div class="w-full font-montserrat">
+			<p class="mb-2 text-2xl font-medium">
 				{{ title }}
 			</p>
-			<p>
+			<p class="mb-3 text-lg">
 				{{ description }}
 			</p>
 			<div class="flex justify-around">

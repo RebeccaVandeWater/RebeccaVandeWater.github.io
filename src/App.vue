@@ -6,19 +6,25 @@ import HomePageVue from "../src/pages/HomePage.vue"
   <HomePageVue />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
+<style lang="scss">
+@media(min-width: 768px) {
+  ::-webkit-scrollbar {
+    background-color: #4c5259;
+    width: .5em;
+    height: .5em;
+    border: 1px solid #383838;
+  }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
+  ::-webkit-scrollbar-thumb {
+    width: .25em;
+    background-color: #676666;
+    border-radius: 10em;
+  }
 
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+  ::-webkit-scrollbar-thumb:hover {
+    width: .25em;
+    background-color: #7a7979;
+    border-radius: 10em;
+  }
 }
 </style>

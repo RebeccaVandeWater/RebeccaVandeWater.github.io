@@ -23,12 +23,12 @@
   </div>
 
   <!-- Hero Section -->
-  <div class="bg-gradient-to-r from-rose-400 via-pink-600 to-purple-600 h-1/4 dm:block md:flex sm:flex-col md:flex-row">
+  <div class="md:flex sm:flex-col md:flex-row">
     <div class="md:w-2/4 lg:w-2/5 flex justify-center items-center sm:order-1 md:order-2 p-4">
       <img src="../assets/Rebecca VandeWater 2 (1).jpg" alt="rebecca photo"
         class="rounded-3xl object-contain object-center w-2/3 sm:w-auto sm:h-1/4 md:h-2/3 lg:h-3/5">
     </div>
-    <div class="w-auto md:w-2/4 lg:w-3/5 ml-6 sm:ml-14 flex flex-col md:justify-center text-white sm:order-2 md:order-1">
+    <div class="w-auto md:w-2/4 lg:w-3/5 ml-6 sm:ml-14 flex flex-col md:justify-center sm:order-2 md:order-1">
       <p class="text-2xl md:text-3xl mb-5 font-medium lg:text-4xl">
         Hi, I'm Rebecca VandeWater
       </p>
@@ -51,27 +51,27 @@
     <SkillIcon :title="'MySQL'" :img="sqlLogo" />
     <SkillIcon :title="'HTML5'" :img="htmlLogo" />
     <SkillIcon :title="'CSS3'" :img="cssLogo" />
-    <SkillIcon :title="'Tailwind'" :img="tailwindLogo" />
+    <SkillIcon :title="'Tailwind'" :img="tailwindLogo2" />
     <SkillIcon :title="'Bootstrap'" :img="bootstrapLogo" />
   </div>
 
   <!-- Application Section -->
   <div class="h-2/3 flex flex-col">
-    <div class="flex justify-start my-20 p-5">
+    <div class="flex sm:justify-start justify-center my-10 sm:my-20 p-5">
       <ApplicationSummary :title="'JABB Book Club'"
         :img="'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'"
         :description="'An application based around creating and interacting with book clubs and book lists. Built on a development team of four, utilizing Scrum and Agile methods to organize team communication.'"
         :skill1img="vueLogo" :skill1="'Vue.js'" :skill2img="csharpLogo" :skill2="'C#'" :skill3img="sqlLogo"
         :skill3="'MySQL'" />
     </div>
-    <div class="flex justify-end my-20 p-5">
+    <div class="flex sm:justify-end justify-center my-10 sm:my-20 p-5">
       <ApplicationSummary :title="'Keepr'"
         :img="'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'"
         :description="'An application created as the final from CodeWorks. Build independently, it utilizes a MySQL database, Vue.js frontend, and C# DotNet backend.'"
         :skill1img="vueLogo" :skill1="'Vue.js'" :skill2img="csharpLogo" :skill2="'C#'" :skill3img="sqlLogo"
         :skill3="'MySQL'" />
     </div>
-    <div class="flex justify-start my-20 p-5">
+    <div class="flex sm:justify-start justify-center my-10 sm:my-20 p-5">
       <ApplicationSummary :title="'Tower'"
         :img="'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'"
         :description="'An application based around creating and interacting with in-person events. Built independently, it utilizes a MongoDB database, Vue.js frontend, and Node.js Express backend.'"
@@ -98,16 +98,13 @@ import javascriptLogo from '../assets/javascript.png';
 import vueLogo from '../assets/vue.png';
 import nodeLogo from '../assets/node.png';
 import sqlLogo from '../assets/sql.png';
-import mongoLogo1 from '../assets/mongo1.png';
-import mongoLogo2 from '../assets/mongo2.png';
 import mongoLogo3 from '../assets/mongo3.png';
 import csharpLogo from '../assets/csharp.png';
 import htmlLogo from '../assets/html.png';
 import cssLogo from '../assets/css.png';
 import bootstrapLogo from '../assets/bootstrap.png';
-import tailwindLogo from '../assets/tailwind.png'
+import tailwindLogo2 from '../assets/tailwind2.png';
 import ApplicationSummary from '../components/ApplicationSummary.vue';
-import { computed } from 'vue';
 
 export default {
   setup() {
@@ -116,14 +113,12 @@ export default {
       vueLogo,
       nodeLogo,
       sqlLogo,
-      mongoLogo1,
-      mongoLogo2,
       mongoLogo3,
       csharpLogo,
       htmlLogo,
       cssLogo,
       bootstrapLogo,
-      tailwindLogo
+      tailwindLogo2
     };
   },
   components: { SkillIcon, ApplicationSummary }
@@ -131,4 +126,15 @@ export default {
 </script>
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+div::-webkit-scrollbar {
+  background-color: #4c5259;
+  width: .5em;
+}
+
+div::-webkit-scrollbar-thumb {
+  width: .5em;
+  background-color: #676666;
+  border-radius: 10em;
+}
+</style>
