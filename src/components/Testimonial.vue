@@ -1,7 +1,9 @@
 <template>
-  <div class="bg-gray-600 flex flex-col h-1/3">
+  <div class="bg-gray-600 flex flex-col h-2/3">
     <div>
-      <img :src="img" :alt="name" class="object-contain object-center h-32 w-32">
+      <div class="w-20 h-20">
+        <img :src="img" :alt="name" class="avatar-img">
+      </div>
       <span>
         {{ name }}
       </span>
@@ -26,4 +28,10 @@ export default {
 }
 </script>
 
-<style language="scss" scoped></style>
+<style language="scss" scoped>
+.avatar-img {
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+</style>
