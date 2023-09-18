@@ -1,5 +1,5 @@
 <template>
-	<div class="flex sm:flex-row flex-col w-5/6 items-center">
+	<div class="flex sm:flex-row flex-col w-5/6 items-center snap-normal">
 		<div class="sm:w-5/6 sm:mr-5 mb-5 sm:mb-0">
 			<img :src="img" :alt="title" class="object-contain object-center">
 		</div>
@@ -7,14 +7,13 @@
 			<p class="mb-2 text-2xl font-medium">
 				{{ title }}
 			</p>
-			<p class="mb-3 text-lg">
-				{{ description }}
-			</p>
-			<div class="flex justify-around">
-				<img :src="skill1img" :alt="skill1" class="object-contain object-center w-1/6">
-				<img :src="skill2img" :alt="skill2" class="object-contain object-center w-1/6">
-				<img :src="skill3img" :alt="skill3" class="object-contain object-center w-1/6">
-				<img :src="skill4img" :alt="skill4" class="object-contain object-center w-1/6">
+			<div class="mb-3 text-lg" v-html="description">
+			</div>
+			<div class="flex justify-center">
+				<img :src="skill1img" :alt="skill1" class="object-contain object-center w-1/6 m-3">
+				<img :src="skill2img" :alt="skill2" class="object-contain object-center w-1/6 m-3">
+				<img :src="skill3img" :alt="skill3" class="object-contain object-center w-1/6 m-3">
+				<img :src="skill4img" :alt="skill4" class="object-contain object-center w-1/6 m-3">
 			</div>
 		</div>
 	</div>

@@ -42,7 +42,7 @@
   </div>
 
   <!-- About Section -->
-  <div class="bg-gray-900 h-1/3 w-full flex flex-row p-5 overflow-x-auto">
+  <div class="bg-gray-900 h-1/3 w-full flex flex-row p-5 overflow-x-auto snap-x">
     <SkillIcon :title="'Javascript ES6'" :img="javascriptLogo" />
     <SkillIcon :title="'Vue.js'" :img="vueLogo" />
     <SkillIcon :title="'Node.js'" :img="nodeLogo" />
@@ -60,29 +60,30 @@
     <div class="flex sm:justify-start justify-center my-10 sm:my-20 p-5">
       <ApplicationSummary :title="'JABB Book Club'"
         :img="'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'"
-        :description="'An application based around creating and interacting with book clubs and book lists. Built on a development team of four, utilizing Scrum and Agile methods to organize team communication.'"
+        :description="'<p>An application based around creating and interacting with book clubs and book lists.</p> <br> <p>Built on a development team of four, utilizing Scrum and Agile methods to organize team communication.</p>'"
         :skill1img="vueLogo" :skill1="'Vue.js'" :skill2img="csharpLogo" :skill2="'C#'" :skill3img="sqlLogo"
         :skill3="'MySQL'" />
     </div>
     <div class="flex sm:justify-end justify-center my-10 sm:my-20 p-5">
       <ApplicationSummary :title="'Keepr'"
         :img="'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'"
-        :description="'An application created as the final from CodeWorks. Build independently, it utilizes a MySQL database, Vue.js frontend, and C# DotNet backend.'"
+        :description="'<p>An application created as the final from CodeWorks.</p> <br> <p>Build independently, it utilizes a MySQL database, Vue.js frontend, and C# DotNet backend.</p>'"
         :skill1img="vueLogo" :skill1="'Vue.js'" :skill2img="csharpLogo" :skill2="'C#'" :skill3img="sqlLogo"
         :skill3="'MySQL'" />
     </div>
     <div class="flex sm:justify-start justify-center my-10 sm:my-20 p-5">
       <ApplicationSummary :title="'Tower'"
         :img="'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'"
-        :description="'An application based around creating and interacting with in-person events. Built independently, it utilizes a MongoDB database, Vue.js frontend, and Node.js Express backend.'"
+        :description="'<p>An application based around creating and interacting with in-person events.<p> <br> <p>Built independently, it utilizes a MongoDB database, Vue.js frontend, and Node.js Express backend.</p>'"
         :skill1img="vueLogo" :skill1="'Vue.js'" :skill2img="nodeLogo" :skill2="'Node.js'" :skill3img="mongoLogo3"
         :skill3="'MongoDB'" />
     </div>
   </div>
 
   <!-- Testimonial Section -->
-  <div>
-
+  <div class="bg-gray-900">
+    <Testimonial
+      :img="'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'" />
   </div>
 
   <!-- Contact Section -->
@@ -105,6 +106,7 @@ import cssLogo from '../assets/css.png';
 import bootstrapLogo from '../assets/bootstrap.png';
 import tailwindLogo2 from '../assets/tailwind2.png';
 import ApplicationSummary from '../components/ApplicationSummary.vue';
+import Testimonial from '../components/Testimonial.vue';
 
 export default {
   setup() {
@@ -121,7 +123,7 @@ export default {
       tailwindLogo2
     };
   },
-  components: { SkillIcon, ApplicationSummary }
+  components: { SkillIcon, ApplicationSummary, Testimonial }
 }
 </script>
 
