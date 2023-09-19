@@ -2,6 +2,7 @@
   "name": "landingpage",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://rebeccavandewater.github.io/LandingPage/",
   "type": "module",
   "scripts": {
     "dev": "vite",
