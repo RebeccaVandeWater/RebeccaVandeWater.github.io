@@ -10,10 +10,10 @@
 			<div class="mb-3 text-lg" v-html="description">
 			</div>
 			<div class="flex justify-center">
-				<img :src="skill1img" :alt="skill1" class="object-contain object-center w-1/6 m-3">
-				<img :src="skill2img" :alt="skill2" class="object-contain object-center w-1/6 m-3">
-				<img :src="skill3img" :alt="skill3" class="object-contain object-center w-1/6 m-3">
-				<img :src="skill4img" :alt="skill4" class="object-contain object-center w-1/6 m-3">
+				<img :src="skill1img" :alt="skill1" class="object-contain object-center w-1/6 m-3" :title="skill1">
+				<img :src="skill2img" :alt="skill2" class="object-contain object-center w-1/6 m-3" :title="skill2">
+				<img :src="skill3img" :alt="skill3" class="object-contain object-center w-1/6 m-3" :title="skill3">
+				<img :src="skill4img" :alt="skill4" class="object-contain object-center w-1/6 m-3" :title="skill4">
 			</div>
 		</div>
 	</div>
