@@ -49,10 +49,13 @@
     <SkillIcon :title="'MongoDB'" :img="mongoLogo3" />
     <SkillIcon :title="'C#'" :img="csharpLogo" />
     <SkillIcon :title="'MySQL'" :img="sqlLogo" />
+    <SkillIcon :title="'Postman'" :img="postmanLogo" />
+    <SkillIcon :title="'Github'" :img="githubLogo" />
     <SkillIcon :title="'HTML5'" :img="htmlLogo" />
     <SkillIcon :title="'CSS3'" :img="cssLogo" />
     <SkillIcon :title="'Tailwind'" :img="tailwindLogo2" />
     <SkillIcon :title="'Bootstrap'" :img="bootstrapLogo" />
+    <SkillIcon :title="'Figma'" :img="figmaLogo1" />
   </div>
 
   <!-- Application Section -->
@@ -81,9 +84,19 @@
   </div>
 
   <!-- Testimonial Section -->
-  <div class="bg-gray-900">
+  <div class="bg-gray-900 p-5 sm:flex">
     <Testimonial
-      :img="'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'" />
+      :img="'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'"
+      :name="'Really Cool Person'"
+      :content="'<p>Rebecca has amazing skills! She is great to work with and a team player.</p> <br> <p>She would be a great fit at any company!</p>'" />
+    <Testimonial
+      :img="'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'"
+      :name="'Really Cool Person'"
+      :content="'<p>Rebecca has amazing skills! She is great to work with and a team player.</p> <br> <p>She would be a great fit at any company!</p>'" />
+    <Testimonial
+      :img="'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'"
+      :name="'Really Cool Person'"
+      :content="'<p>Rebecca has amazing skills! She is great to work with and a team player.</p> <br> <p>She would be a great fit at any company!</p>'" />
   </div>
 
   <!-- Contact Section -->
@@ -105,6 +118,9 @@ import htmlLogo from '../assets/html.png';
 import cssLogo from '../assets/css.png';
 import bootstrapLogo from '../assets/bootstrap.png';
 import tailwindLogo2 from '../assets/tailwind2.png';
+import postmanLogo from '../assets/postman.png';
+import githubLogo from '../assets/github3.png';
+import figmaLogo1 from '../assets/figma1.png';
 import ApplicationSummary from '../components/ApplicationSummary.vue';
 import Testimonial from '../components/Testimonial.vue';
 
@@ -120,7 +136,10 @@ export default {
       htmlLogo,
       cssLogo,
       bootstrapLogo,
-      tailwindLogo2
+      tailwindLogo2,
+      postmanLogo,
+      githubLogo,
+      figmaLogo1
     };
   },
   components: { SkillIcon, ApplicationSummary, Testimonial }
@@ -128,15 +147,4 @@ export default {
 </script>
 
 
-<style lang="scss" scoped>
-div::-webkit-scrollbar {
-  background-color: #4c5259;
-  width: .5em;
-}
-
-div::-webkit-scrollbar-thumb {
-  width: .5em;
-  background-color: #676666;
-  border-radius: 10em;
-}
-</style>
+<style lang="scss" scoped></style>

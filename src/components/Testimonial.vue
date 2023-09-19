@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-gray-600 flex flex-col h-2/3">
-    <div>
-      <div class="w-20 h-20">
+  <div class="bg-gray-600 flex flex-col h-2/3 sm:w-1/3 text-white p-4 m-3">
+    <div class="flex items-center mb-2">
+      <div class="pr-3">
         <img :src="img" :alt="name" class="avatar-img">
       </div>
       <span>
@@ -28,10 +28,12 @@ export default {
 }
 </script>
 
-<style language="scss" scoped>
+<style lang="scss" scoped>
 .avatar-img {
-  border-radius: 100%;
+  height: 4.5em;
+  width: 4.5em;
+  border-radius: 50%;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
 }
 </style>
