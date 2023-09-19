@@ -23,14 +23,10 @@
   </div>
 
   <!-- Hero Section -->
-  <div class="md:flex sm:flex-col md:flex-row">
-    <div class="md:w-2/4 lg:w-2/5 flex justify-center items-center sm:order-1 md:order-2 p-4">
-      <img src="../assets/Rebecca VandeWater 2 (1).jpg" alt="rebecca photo"
-        class="rounded-3xl object-contain object-center w-2/3 sm:w-auto sm:h-1/4 md:h-2/3 lg:h-3/5">
-    </div>
-    <div class="w-auto md:w-2/4 lg:w-3/5 ml-6 sm:ml-14 flex flex-col md:justify-center sm:order-2 md:order-1">
+  <div class="p-5 flex justify-center w-full">
+    <div class="flex flex-col justify-center">
       <p class="text-2xl md:text-3xl mb-5 font-medium lg:text-4xl">
-        Hi, I'm Rebecca VandeWater
+        Rebecca VandeWater
       </p>
       <p class="text-4xl md:text-5xl mb-5 font-semibold lg:text-6xl">
         Full-Stack Software Engineer
@@ -39,6 +35,8 @@
         Life-long Learner
       </p>
     </div>
+  </div>
+  <div>
   </div>
 
   <!-- About Section -->
@@ -101,7 +99,6 @@
 
   <!-- Contact Section -->
   <div>
-
   </div>
 </template>
 
