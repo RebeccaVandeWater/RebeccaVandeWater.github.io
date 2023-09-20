@@ -1,19 +1,5 @@
 <script setup>
 import HomePageVue from "../src/pages/HomePage.vue"
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    } else {
-      entry.target.classList.remove('show');
-    }
-  });
-});
-
-const hiddenElems = document.querySelectorAll('.hidden');
-
-hiddenElems.forEach((el) => observer.observe(el));
 </script>
 
 <template>
@@ -50,34 +36,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.fade-out {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1s;
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(40%);
-  transition: all 1s ease-out;
-}
-
-.skill:nth-child(2) {
-  transition-delay: 200ms;
-}
-
-.skill:nth-child(3) {
-  transition-delay: 400ms;
-}
-
-.skill:nth-child(4) {
-  transition-delay: 600ms;
-}
-
-@media(prefers-reduced-motion) {
-  .fade-out {
-    transition: none;
-  }
+.text-shadow{
+  text-shadow: 1px 1px 1px black;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <!-- Navbar Section -->
-  <div class="bg-gray-900 text-white h-14 sticky top-0 z-10">
+  <div class="bg-gray-900 border-b-2 border-gray-700 text-white h-14 sticky top-0 z-10">
     <ul class="flex items-center flex-row sm:justify-around h-full font-montserrat text-lg">
       <li class="w-1/4 sm:text-center ms-10 sm:ms-0">
         <a href="#home" class="hover:shadow-md hover:shadow-rose-600/60">Home</a>
@@ -25,13 +25,13 @@
   <!-- Hero Section -->
   <div class="flex justify-center w-full min-h-screen" id="home">
     <div class="flex flex-col justify-center font-montserrat">
-      <p class="text-2xl md:text-3xl mb-5 font-medium lg:text-4xl">
+      <p class="text-2xl md:text-3xl mb-5 font-medium lg:text-4xl slide text-heading">
         Rebecca VandeWater
       </p>
-      <p class="text-4xl md:text-5xl mb-5 font-semibold lg:text-6xl">
+      <p class="text-4xl md:text-5xl mb-5 font-semibold lg:text-6xl slide text-heading">
         Full-Stack Software Engineer
       </p>
-      <p class="text-2xl md:text-3xl mb-5 font-medium lg:text-4xl">
+      <p class="text-2xl md:text-3xl mb-5 font-medium lg:text-4xl slide text-heading">
         Life-long Learner
       </p>
     </div>
@@ -64,36 +64,91 @@
   </div>
 
   <!-- Application Section -->
-  <div class="h-2/3 flex flex-col border-t-2 border-gray-300" id="applications">
+  <div class="h-2/3 flex flex-col bg-gray-900 text-white" id="applications">
     <div class="p-5 text-2xl font-semibold font-montserrat">
       <p>
         My Applications
       </p>
     </div>
-    <div class="flex sm:justify-start justify-center mb-10 sm:mb-20 p-5">
-      <ApplicationSummary :title="'JABB Book Club'" :img="jabbImg"
-        :description="'<p>A full-stack application based around creating and interacting with book clubs and book lists.</p> <br> <p>This application was built on a team of four developers utilizing Scrum and Agile methods to organize team communication.</p> <br> <p>JABB uses MongoDB to store user data, and requests data from the New York Times and Google Books third party APIs. Additionally, its features were tested thoroughly in Postman and guided with user stories.</p>'"
-        :skill1img="vueLogo" :skill1="'Vue.js'" :skill2img="nodeLogo" :skill2="'Node.js'" :skill3img="mongoLogo3"
-        :skill3="'MongoDB'" :skill4img="postmanLogo" :skill4="'Postman'" />
+    <div class="flex lg:justify-start justify-center mb-10 sm:mb-20 p-5">
+      <div class="flex lg:flex-row flex-col w-5/6 items-center snap-normal fade-in">
+        <div class="lg:w-5/6 lg:mr-5 mb-5 lg:mb-0 select-none">
+          <img :src="jabbImg" alt="JABB Book Club" class="object-contain object-center rounded-md shadow-lg shadow-slate-600">
+        </div>
+        <div class="w-full font-montserrat">
+          <p class="mb-2 text-xl font-medium">
+            JABB Book Club
+          </p>
+          <div class="mb-3 text-md">
+            <p>A full-stack application based around creating and interacting with book clubs and book lists.</p>
+            <br>
+            <p>This application was built on a team of four developers utilizing Scrum and Agile methods to organize team communication.</p>
+            <br>
+            <p>JABB uses MongoDB to store user data, and requests data from the New York Times and Google Books third party APIs. Additionally, its features were tested thoroughly in Postman and guided with user stories.</p>
+          </div>
+          <div class="flex justify-center select-none">
+            <img :src="vueLogo" alt="Vue.js" class="object-contain object-center w-1/6 m-3 skill fade-in" title="Vue.js">
+            <img :src="nodeLogo" alt="Node.js" class="object-contain object-center w-1/6 m-3 skill fade-in" title="Node.js">
+            <img :src="mongoLogo3" alt="MongoDB" class="object-contain object-center w-1/6 m-3 skill fade-in" title="MongoDB">
+            <img :src="postmanLogo" alt="Postman" class="object-contain object-center w-1/6 m-3 skill fade-in" title="Postman">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flex sm:justify-end justify-center my-10 sm:my-20 p-5">
-      <ApplicationSummary :title="'Keepr'"
-        :img="'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'"
-        :description="'<p>A full-stack social media application which allows users to create and interact with keeps and vaults.</p> <br> <p>Build independently, it utilizes a Vue.js frontend and C# DotNet backend.</p> <br> <p>Keepr uses MySQL to store user data, and was tested thoroughly in Postman.'"
-        :skill1img="vueLogo" :skill1="'Vue.js'" :skill2img="csharpLogo" :skill2="'C#'" :skill3img="sqlLogo"
-        :skill3="'MySQL'" :skill4img="postmanLogo" :skill4="'Postman'" />
+    <div class="flex lg:justify-end justify-center my-10 sm:my-20 p-5">
+      <div class="flex lg:flex-row flex-col w-5/6 items-center snap-normal fade-in">
+        <div class="lg:w-5/6 lg:mr-5 mb-5 lg:mb-0 select-none">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Keepr" class="object-contain object-center shadow-lg rounded-md shadow-slate-600">
+        </div>
+        <div class="w-full font-montserrat">
+          <p class="mb-2 text-xl font-medium">
+            Keepr
+          </p>
+          <div class="mb-3 text-md">
+            <p>A full-stack social media application which allows users to create and interact with keeps and vaults.</p>
+            <br> 
+            <p>Build independently, it utilizes a Vue.js frontend and C# DotNet backend.</p>
+            <br> 
+            <p>Keepr uses MySQL to store user data, and was tested thoroughly in Postman.</p>
+          </div>
+          <div class="flex justify-center select-none">
+            <img :src="vueLogo" alt="Vue.js" class="object-contain object-center w-1/6 m-3 skill fade-in" title="Vue.js">
+            <img :src="csharpLogo" alt="C#" class="object-contain object-center w-1/6 m-3 skill fade-in" title="C#">
+            <img :src="sqlLogo" alt="MySQL" class="object-contain object-center w-1/6 m-3 skill fade-in" title="MySQL">
+            <img :src="postmanLogo" alt="Postman" class="object-contain object-center w-1/6 m-3 skill fade-in" title="Postman">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flex sm:justify-start justify-center my-10 sm:my-20 p-5">
-      <ApplicationSummary :title="'Tower'" :img="towerImg"
-        :description="'<p>A full-stack social media application based around creating and interacting with in-person events.<p> <br> <p>Tower was developed independently. It utilizes a MongoDB database, Vue.js frontend, and Node.js Express backend.</p> <br> <p>Tower is a feature-rich application, and allows users to create and cancel their events, comment on events, and obtain tickets for events.'"
-        :skill1img="vueLogo" :skill1="'Vue.js'" :skill2img="nodeLogo" :skill2="'Node.js'" :skill3img="mongoLogo3"
-        :skill3="'MongoDB'" />
+    <div class="flex lg:justify-start justify-center my-10 sm:my-20 p-5">
+      <div class="flex lg:flex-row flex-col w-5/6 items-center snap-normal fade-in">
+        <div class="lg:w-5/6 lg:mr-5 mb-5 lg:mb-0 select-none">
+          <img :src="towerImg" alt="Tower" class="object-contain object-center shadow-lg shadow-slate-600 rounded-md">
+        </div>
+        <div class="w-full font-montserrat">
+          <p class="mb-2 text-xl font-medium">
+            Tower
+          </p>
+          <div class="mb-3 text-md">
+            <p>A full-stack social media application based around creating and interacting with in-person events.</p>
+            <br>
+            <p>Tower was developed independently. It utilizes a MongoDB database, Vue.js frontend, and Node.js Express backend.</p>
+            <br>
+            <p>Tower is a feature-rich application, and allows users to create and cancel their events, comment on events, and obtain tickets for events.</p>
+          </div>
+          <div class="flex justify-center select-none">
+            <img :src="vueLogo" alt="Vue.js" class="object-contain object-center w-1/6 m-3 skill fade-in" title="Vue.js">
+            <img :src="nodeLogo" alt="Node.js" class="object-contain object-center w-1/6 m-3 skill fade-in" title="Node.js">
+            <img :src="mongoLogo3" alt="MongoDB" class="object-contain object-center w-1/6 m-3 skill fade-in" title="MongoDB">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Testimonial Section -->
-  <div class="bg-gray-900 p-5" id="testimonials">
-    <p class="text-white text-2xl font-semibold font-montserrat">
+  <div class="bg-gradient-to-br from-gray-900 via-violet-900 to-pink-500 p-5" id="testimonials">
+    <p class="text-white text-shadow text-2xl font-semibold font-montserrat">
       Testimonials
     </p>
     <div class="sm:flex">
@@ -141,9 +196,41 @@ import ApplicationSummary from '../components/ApplicationSummary.vue';
 import Testimonial from '../components/Testimonial.vue';
 import About from '../components/About.vue';
 import ContactMe from '../components/ContactMe.vue';
+import { onMounted, onUnmounted } from 'vue';
 
 export default {
   setup() {
+
+    let fadeInElements = []
+
+    const handleScroll = (evt) => {
+      for(let i = 0; i < fadeInElements.length; i++){
+        let elem = fadeInElements[i]
+        if(isElemVisible(elem)){
+          elem.style.opacity = '1'
+          elem.style.transform = 'translateX(0)'
+          elem.style.filter = 'blur(0px)'
+          fadeInElements.splice(i, 1)
+        }
+      }
+    }
+
+    const isElemVisible = (el) => {
+      let rect = el.getBoundingClientRect()
+      let elemTop = rect.top + 100
+      let elemBottom = rect.bottom
+      return elemTop < window.innerHeight && elemBottom >= 0
+    }
+
+    onMounted(() => {
+      fadeInElements = Array.from(document.getElementsByClassName('fade-in'))
+      document.addEventListener('scroll', handleScroll)
+      handleScroll()
+    })
+
+    onUnmounted(() => {
+      document.removeEventListener('scroll', handleScroll)
+    })
 
     return {
       javascriptLogo,
@@ -171,13 +258,69 @@ export default {
 
 <style lang="scss" scoped>
 .fade-in {
-  opacity: 0;
-  transform: translateY(40%);
-  transition: all 1s ease-out;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    transform: translateX(-100%);
+    filter: blur(5px);
 }
 
-.active {
-  opacity: 4;
-  transform: translateY(0%);
+.skill{
+  animation-delay: 100ms;
 }
+
+.skill:nth-child(2){
+  animation-delay: 500ms;
+}
+
+.skill:nth-child(3){
+  animation-delay: 700ms;
+}
+
+.skill:nth-child(4){
+  animation-delay: 900ms;
+}
+
+#home {
+  background-image: url('https://images.unsplash.com/photo-1534271057238-c2c170a76672?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  animation: slidein 100s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {background-position: top;background-size:3000px; }
+  to {background-position: -100px 0px;background-size:2750px;}
+}
+
+.slide{
+  animation: slideup ease 2s forwards;
+}
+
+.text-heading:nth-child(1){
+  opacity: 0;
+  animation-delay: 300ms;
+}
+.text-heading:nth-child(2){
+  opacity: 0;
+  animation-delay: 600ms;
+}
+
+.text-heading:nth-child(3){
+  opacity: 0;
+  animation-delay: 900ms;
+}
+
+@keyframes slideup{
+  from{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 </style>

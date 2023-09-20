@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col sm:flex-row items-center justify-center p-5">
-    <div class="sm:w-2/3 order-2 sm:order-1 sm:mr-4 text-md font-montserrat ">
+  <div class="flex flex-col sm:flex-row items-center justify-center p-5 bg-gradient-to-br from-gray-900 via-violet-900 to-pink-500">
+    <div class="lg:w-1/3 order-2 sm:order-1 sm:mr-10 text-md font-montserrat text-white text-shadow">
       <div>
         <p class="pb-2 text-2xl font-semibold">
           About Me
@@ -26,10 +26,10 @@
       </p>
       <p class="pb-2">
         My hobbies include playing in and running D&D games, gardening, and embroidery. I love spending time with my
-        family, and finding new adventures that widen my knowledge and understanding of the world around me 🌎
+        family, and finding new adventures that widen my knowledge and understanding of the world around me.
       </p>
     </div>
-    <div class="sm:w-1/3 flex justify-center items-center order-1 sm:order-3 select-none">
+    <div class="lg:w-1/4 flex justify-center items-center order-1 sm:order-3 select-none">
       <img src="../assets/headshot.jpg" alt="rebecca photo"
         class="rounded-3xl object-contain object-center w-2/3 sm:w-auto sm:h-1/4 md:h-2/3 lg:h-3/5">
     </div>
@@ -46,4 +46,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>
