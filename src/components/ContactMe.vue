@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-900 rounded-md shadow-md shadow-slate-400 sm:w-2/3 p-5 m-3">
-    <p class="text-xl font-semibold font-montserrat text-center text-white">
+    <p class="text-2xl font-semibold font-montserrat text-center text-white">
       Contact Me
     </p>
     <form action="https://formsubmit.co/becca.vandewater@gmail.com" method="POST" class="flex flex-col">

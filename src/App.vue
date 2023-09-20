@@ -31,4 +31,8 @@ import HomePageVue from "../src/pages/HomePage.vue"
   background-color: #7a7979;
   border-radius: 10em;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 </style>
