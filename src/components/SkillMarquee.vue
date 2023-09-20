@@ -1,6 +1,6 @@
 <template>
   <div class="flex whitespace-nowrap overflow-x-scroll motion-safe:overflow-x-hidden">
-    <div class="relative p-5">
+    <div class="relative p-5 pt-0">
       <ul class="flex motion-safe:animate-marquee">
         <li>
           <SkillIcon :title="'Javascript ES6'" :img="javascriptLogo" />
@@ -139,5 +139,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+li{
+  height: fit-content;
+}
 </style>
