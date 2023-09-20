@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col sm:flex-row items-center justify-center p-5 w-2/3 bg-gray-900 rounded-lg m-3">
-    <div class="w-1/2 order-2 sm:order-1 sm:mr-10 text-md font-montserrat text-white text-shadow ">
+  <div class="flex flex-col sm:flex-row items-center justify-center p-5 sm:w-2/3 bg-gray-900 rounded-lg m-3">
+    <div class="sm:w-1/2 order-2 sm:order-1 sm:mr-10 mt-5 sm:mt-0 text-md font-montserrat text-white text-shadow ">
       <div>
         <p class="pb-2 text-2xl font-semibold">
           About Me

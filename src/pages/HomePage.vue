@@ -3,19 +3,19 @@
   <div class="bg-gray-900 border-b-2 border-gray-700 text-white h-14 sticky top-0 z-10">
     <ul class="flex items-center flex-row sm:justify-around h-full font-montserrat text-lg">
       <li class="w-1/4 sm:text-center ms-10 sm:ms-0">
-        <a href="#home" class="hover:shadow-md hover:shadow-rose-600/60">Home</a>
+        <a href="#home" class="hover:shadow-lg hover:shadow-violet-500/60">Home</a>
       </li>
       <div class="w-3/4 justify-evenly hidden sm:flex">
-        <li class="hover:shadow-md hover:shadow-rose-600/60">
+        <li class="hover:shadow-lg hover:shadow-violet-500/60">
           <a href="#about">About</a>
         </li>
-        <li class="hover:shadow-md hover:shadow-rose-600/60">
+        <li class="hover:shadow-lg hover:shadow-violet-500/60">
           <a href="#applications">Applications</a>
         </li>
-        <li class="hover:shadow-md hover:shadow-rose-600/60">
+        <li class="hover:shadow-lg hover:shadow-violet-500/60">
           <a href="#testimonials">Testimonials</a>
         </li>
-        <li class="hover:shadow-md hover:shadow-rose-600/60">
+        <li class="hover:shadow-lg hover:shadow-violet-500/60">
           <a href="#contact">Contact</a>
         </li>
       </div>
@@ -24,7 +24,7 @@
 
   <!-- Hero Section -->
   <div class="flex justify-center w-full min-h-screen" id="home">
-    <div class="flex flex-col justify-center font-montserrat">
+    <div class="flex flex-col justify-center font-montserrat m-3">
       <p class="text-2xl md:text-3xl mb-5 font-medium lg:text-4xl slide text-heading">
         Rebecca VandeWater
       </p>
@@ -73,7 +73,7 @@
     <div class="flex lg:justify-start justify-center mb-10 sm:mb-20 p-5">
       <div class="flex lg:flex-row flex-col w-5/6 items-center snap-normal fade-in">
         <div class="lg:w-5/6 lg:mr-5 mb-5 lg:mb-0 select-none">
-          <img :src="jabbImg" alt="JABB Book Club" class="object-contain object-center rounded-md shadow-lg shadow-slate-600">
+          <img :src="jabbImg" alt="JABB Book Club" class="object-contain object-center rounded-md shadow-lg shadow-violet-500">
         </div>
         <div class="w-full font-montserrat">
           <p class="mb-2 text-xl font-medium">
@@ -98,7 +98,7 @@
     <div class="flex lg:justify-end justify-center my-10 sm:my-20 p-5">
       <div class="flex lg:flex-row flex-col w-5/6 items-center snap-normal fade-in">
         <div class="lg:w-5/6 lg:mr-5 mb-5 lg:mb-0 select-none">
-          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Keepr" class="object-contain object-center shadow-lg rounded-md shadow-slate-600">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Keepr" class="object-contain object-center shadow-lg rounded-md shadow-violet-500">
         </div>
         <div class="w-full font-montserrat">
           <p class="mb-2 text-xl font-medium">
@@ -123,7 +123,7 @@
     <div class="flex lg:justify-start justify-center my-10 sm:my-20 p-5">
       <div class="flex lg:flex-row flex-col w-5/6 items-center snap-normal fade-in">
         <div class="lg:w-5/6 lg:mr-5 mb-5 lg:mb-0 select-none">
-          <img :src="towerImg" alt="Tower" class="object-contain object-center shadow-lg shadow-slate-600 rounded-md">
+          <img :src="towerImg" alt="Tower" class="object-contain object-center shadow-lg shadow-violet-500 rounded-md">
         </div>
         <div class="w-full font-montserrat">
           <p class="mb-2 text-xl font-medium">
@@ -324,13 +324,13 @@ export default {
 }
 
 #contact{
-  background: linear-gradient(-45deg, #3c4274, #dd7497, #a25687, #ffb79c);
+  background: linear-gradient(-45deg, #3c4274, #dd7497, #a25687, #48487c);
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
 }
 
 #about-me{
-  background: linear-gradient(-45deg, #3c4274, #dd7497, #a25687, #ffb79c);
+  background: linear-gradient(-45deg, #3c4274, #dd7497, #a25687, #48487c);
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
 }
