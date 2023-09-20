@@ -3,7 +3,7 @@
     class="bg-gray-600 flex flex-col h-2/3 sm:w-1/3 text-white p-4 m-3 rounded-md font-montserrat shadow-lg shadow-rose-600/70">
     <div class="flex items-center mb-2">
       <div class="pr-3 select-none">
-        <img :src="img" :alt="name" class="avatar-img">
+        <img :src="img" :alt="name" class="rounded-full object-cover object-top h-20 w-20">
       </div>
       <span class="font-medium">
         {{ name }}
@@ -30,11 +30,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.avatar-img {
-  height: 4.5em;
-  width: 4.5em;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: top;
-}
 </style>
