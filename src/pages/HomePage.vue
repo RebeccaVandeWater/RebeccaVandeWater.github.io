@@ -38,26 +38,11 @@
   </div>
 
   <!-- About Section -->
-  <div class="bg-gray-900 h-1/3" id="about">
+  <div class="bg-gray-900" id="about">
     <p class="text-white pl-5 pt-5 text-2xl font-montserrat font-semibold">
       My Skills
     </p>
-    <div class="w-full flex flex-row p-5 overflow-x-auto snap-x select-none">
-      <SkillIcon :title="'Javascript ES6'" :img="javascriptLogo" />
-      <SkillIcon :title="'Vue.js'" :img="vueLogo" />
-      <SkillIcon :title="'Node.js'" :img="nodeLogo" />
-      <SkillIcon :title="'MongoDB'" :img="mongoLogo3" />
-      <SkillIcon :title="'C#'" :img="csharpLogo" />
-      <SkillIcon :title="'MySQL'" :img="sqlLogo" />
-      <SkillIcon :title="'Postman'" :img="postmanLogo" />
-      <SkillIcon :title="'Github'" :img="githubLogo" />
-      <SkillIcon :title="'HTML5'" :img="htmlLogo" />
-      <SkillIcon :title="'CSS3'" :img="cssLogo" />
-      <SkillIcon :title="'Tailwind'" :img="tailwindLogo2" />
-      <SkillIcon :title="'Bootstrap'" :img="bootstrapLogo" />
-      <SkillIcon :title="'Figma'" :img="figmaLogo1" />
-      <SkillIcon :title="'VS Code'" :img="vscodeLogo" />
-    </div>
+    <SkillMarquee />
   </div>
   <div class="flex justify-center items-center" id="about-me">
     <About />
@@ -197,6 +182,7 @@ import Testimonial from '../components/Testimonial.vue';
 import About from '../components/About.vue';
 import ContactMe from '../components/ContactMe.vue';
 import { onMounted, onUnmounted } from 'vue';
+import SkillMarquee from '../components/SkillMarquee.vue';
 
 export default {
   setup() {
@@ -251,7 +237,7 @@ export default {
       towerImg
     };
   },
-  components: { SkillIcon, ApplicationSummary, Testimonial, About, ContactMe }
+  components: { SkillIcon, ApplicationSummary, Testimonial, About, ContactMe, SkillMarquee }
 }
 </script>
 
