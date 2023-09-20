@@ -59,7 +59,7 @@
       <SkillIcon :title="'VS Code'" :img="vscodeLogo" />
     </div>
   </div>
-  <div>
+  <div class="flex justify-center items-center" id="about-me">
     <About />
   </div>
 
@@ -147,7 +147,7 @@
   </div>
 
   <!-- Testimonial Section -->
-  <div class="bg-gradient-to-br from-gray-900 via-violet-900 to-pink-500 p-5" id="testimonials">
+  <div class="bg-gray-900 p-5" id="testimonials">
     <p class="text-white text-shadow text-2xl font-semibold font-montserrat">
       Testimonials
     </p>
@@ -155,15 +155,15 @@
       <Testimonial
         :img="'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'"
         :name="'Really Cool Person'"
-        :content="'<p>Rebecca has amazing skills! She is great to work with and a team player.</p> <br> <p>She would be a great fit at any company!</p>'" />
+        :content="'<p>Rebecca has amazing skills! She is great to work with and a team player.</p> <br> <p>She would be a great fit at any company!</p>'" class="fade-in skill" />
       <Testimonial
         :img="'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'"
         :name="'Really Cool Person'"
-        :content="'<p>Rebecca has amazing skills! She is great to work with and a team player.</p> <br> <p>She would be a great fit at any company!</p>'" />
+        :content="'<p>Rebecca has amazing skills! She is great to work with and a team player.</p> <br> <p>She would be a great fit at any company!</p>'" class="fade-in skill" />
       <Testimonial
         :img="'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'"
         :name="'Really Cool Person'"
-        :content="'<p>Rebecca has amazing skills! She is great to work with and a team player.</p> <br> <p>She would be a great fit at any company!</p>'" />
+        :content="'<p>Rebecca has amazing skills! She is great to work with and a team player.</p> <br> <p>She would be a great fit at any company!</p>'" class="fade-in skill" />
     </div>
   </div>
 
@@ -321,6 +321,30 @@ export default {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+#contact{
+  background: linear-gradient(-45deg, #3c4274, #dd7497, #a25687, #ffb79c);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
+
+#about-me{
+  background: linear-gradient(-45deg, #3c4274, #dd7497, #a25687, #ffb79c);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 </style>

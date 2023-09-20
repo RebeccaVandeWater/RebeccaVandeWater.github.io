@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900 rounded-md shadow-md shadow-slate-400 sm:w-2/3 xl:w-1/3 p-5 m-3">
+  <div class="bg-gray-900 rounded-md sm:w-2/3 xl:w-1/3 p-5 m-3">
     <p class="text-2xl font-semibold font-montserrat text-center text-white">
       Contact Me
     </p>
