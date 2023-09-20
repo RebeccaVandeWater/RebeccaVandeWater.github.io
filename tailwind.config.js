@@ -14,8 +14,8 @@ export default {
         'montserrat': ["'Montserrat'", 'sans-serif']
       },
       animation: {
-        marquee: 'marquee 45s linear infinite',
-        marquee2: 'marquee2 45s linear infinite',
+        marquee: 'marquee 50s linear infinite',
+        marquee2: 'marquee2 50s linear infinite',
       },
       keyframes: {
         marquee: {
