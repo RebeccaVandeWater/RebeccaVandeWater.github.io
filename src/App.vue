@@ -1,5 +1,6 @@
 <script setup>
 import HomePageVue from "../src/pages/HomePage.vue"
+// server=54.188.92.199;user id=;password=;port=3306
 </script>
 
 <template>
