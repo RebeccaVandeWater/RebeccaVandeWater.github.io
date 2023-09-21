@@ -87,7 +87,7 @@
       <div class="flex lg:flex-row flex-col w-5/6 items-center snap-normal fade-in">
         <div class="lg:w-5/6 lg:mr-5 mb-5 lg:mb-0 select-none" title="Keepr Github Link">
           <a href="https://github.com/RebeccaVandeWater/KeeprVande" aria-label="Keepr Github Link">
-            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Keepr" class="object-contain object-center shadow-lg rounded-md shadow-violet-500">
+            <img :src="keeprImg" alt="Keepr" class="object-contain object-center shadow-lg rounded-md shadow-violet-500">
           </a>
         </div>
         <div class="w-full font-montserrat">
@@ -96,9 +96,9 @@
           </p>
           <div class="mb-3 text-md">
             <p>A full-stack social media application which allows users to create and interact with keeps and vaults.</p>
-            <br> 
+            <br>
             <p>Build independently, it utilizes a Vue.js frontend and C# DotNet backend.</p>
-            <br> 
+            <br>
             <p>Keepr uses MySQL to store user data, and was tested thoroughly in Postman.</p>
           </div>
           <div class="flex justify-center select-none">
@@ -192,6 +192,7 @@ import ContactMe from '../components/ContactMe.vue';
 import { onMounted, onUnmounted } from 'vue';
 import SkillMarquee from '../components/SkillMarquee.vue';
 import ContactInfo from '../components/ContactInfo.vue';
+import keeprImg from '../assets/keepr.jpg';
 
 export default {
 
@@ -244,10 +245,11 @@ export default {
       figmaLogo1,
       vscodeLogo,
       jabbImg,
-      towerImg
+      towerImg,
+      keeprImg
     };
   },
-  components: { SkillIcon, ApplicationSummary, Testimonial, About, ContactMe, SkillMarquee, ContactInfo }
+  components: { Testimonial, About, ContactMe, SkillMarquee, ContactInfo }
 }
 </script>
 
