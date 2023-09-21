@@ -29,7 +29,7 @@
         family, and finding new adventures that widen my knowledge and understanding of the world around me.
       </p>
     </div>
-    <div class="lg:w-1/2 flex justify-center items-center order-1 sm:order-3 select-none">
+    <div class="sm:w-1/3 lg:w-1/2 flex justify-center items-center order-1 sm:order-3 select-none">
       <img src="../assets/headshot.jpg" alt="rebecca photo"
         class="rounded-3xl object-contain object-center w-2/3 sm:w-auto">
     </div>
