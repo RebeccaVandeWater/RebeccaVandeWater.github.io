@@ -43,7 +43,7 @@
     <p class="text-white pl-5 pt-5 text-2xl font-montserrat font-semibold">
       My Skills
     </p>
-    <SkillMarquee />
+    <SkillMarquee class="pt-2" />
   </div>
   <div class="flex justify-center items-center" id="about-me">
     <About />
