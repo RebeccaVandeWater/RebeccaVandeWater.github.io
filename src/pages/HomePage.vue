@@ -160,7 +160,7 @@
   </div> -->
 
   <!-- Contact Section -->
-  <div class="flex flex-col items-center p-3 justify-center" id="contact">
+  <div class="flex flex-col items-center pb-3 justify-center" id="contact">
     <ContactMe />
     <ContactInfo />
   </div>
