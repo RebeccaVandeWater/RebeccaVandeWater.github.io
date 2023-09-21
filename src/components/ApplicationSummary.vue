@@ -1,7 +1,9 @@
 <template>
 	<div class="flex sm:flex-row flex-col w-5/6 items-center snap-normal">
 		<div class="sm:w-5/6 sm:mr-5 mb-5 sm:mb-0 select-none">
-			<img :src="img" :alt="title" class="object-contain object-center">
+			<a :href="link" aria-label="Application Link">
+				<img :src="img" :alt="title" class="object-contain object-center">
+			</a>
 		</div>
 		<div class="w-full font-montserrat">
 			<p class="mb-2 text-xl font-medium">
@@ -26,6 +28,7 @@ export default {
 		title: { type: String, required: true },
 		img: { type: String, required: true },
 		description: { type: String, required: true },
+		link: { type:String, required: true},
 		skill1img: { type: String, required: true },
 		skill1: { type: String, required: true },
 		skill2img: { type: String, required: true },
