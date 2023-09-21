@@ -5,35 +5,36 @@
       <li class="w-1/4 sm:text-center ms-10 sm:ms-0">
         <a href="#home" class="hover:shadow-lg hover:shadow-violet-500/60">Home</a>
       </li>
-      <div class="w-3/4 justify-evenly hidden sm:flex">
+      <ul class="w-3/4 justify-evenly hidden sm:flex">
         <li class="hover:shadow-lg hover:shadow-violet-500/60">
           <a href="#about">About</a>
         </li>
         <li class="hover:shadow-lg hover:shadow-violet-500/60">
           <a href="#applications">Applications</a>
         </li>
-        <li class="hover:shadow-lg hover:shadow-violet-500/60">
+        <!-- <li class="hover:shadow-lg hover:shadow-violet-500/60">
           <a href="#testimonials">Testimonials</a>
-        </li>
+        </li> -->
         <li class="hover:shadow-lg hover:shadow-violet-500/60">
           <a href="#contact">Contact</a>
         </li>
-      </div>
+      </ul>
     </ul>
   </div>
 
   <!-- Hero Section -->
   <div class="flex justify-center w-full min-h-screen" id="home">
     <div class="flex flex-col justify-center font-montserrat m-3">
-      <p class="text-2xl md:text-3xl mb-5 font-medium lg:text-4xl slide text-heading">
+      <p class="text-2xl md:text-3xl mb-5 font-medium lg:text-4xl slide text-heading text-white text-shadow">
         Rebecca VandeWater
       </p>
-      <p class="text-4xl md:text-5xl mb-5 font-semibold lg:text-6xl slide text-heading">
+      <p class="text-4xl md:text-5xl mb-5 font-semibold lg:text-6xl slide text-heading text-white text-shadow">
         Full-Stack Software Engineer
       </p>
-      <p class="text-2xl md:text-3xl mb-5 font-medium lg:text-4xl slide text-heading">
+      <p class="text-2xl md:text-3xl mb-5 font-medium lg:text-4xl slide text-heading text-white text-shadow">
         Life-long Learner
       </p>
+      <ContactInfo class="slide text-heading" />
     </div>
   </div>
 
@@ -132,7 +133,7 @@
   </div>
 
   <!-- Testimonial Section -->
-  <div class="bg-gray-900 p-5" id="testimonials">
+  <!-- <div class="bg-gray-900 p-5" id="testimonials">
     <p class="text-white text-shadow text-2xl font-semibold font-montserrat">
       Testimonials
     </p>
@@ -150,11 +151,12 @@
         :name="'Really Cool Person'"
         :content="'<p>Rebecca has amazing skills! She is great to work with and a team player.</p> <br> <p>She would be a great fit at any company!</p>'" class="fade-in skill" />
     </div>
-  </div>
+  </div> -->
 
   <!-- Contact Section -->
-  <div class="flex justify-center" id="contact">
+  <div class="flex flex-col items-center p-3 justify-center" id="contact">
     <ContactMe />
+    <ContactInfo />
   </div>
 </template>
 
@@ -183,8 +185,10 @@ import About from '../components/About.vue';
 import ContactMe from '../components/ContactMe.vue';
 import { onMounted, onUnmounted } from 'vue';
 import SkillMarquee from '../components/SkillMarquee.vue';
+import ContactInfo from '../components/ContactInfo.vue';
 
 export default {
+
   setup() {
 
     let fadeInElements = []
@@ -237,7 +241,7 @@ export default {
       towerImg
     };
   },
-  components: { SkillIcon, ApplicationSummary, Testimonial, About, ContactMe, SkillMarquee }
+  components: { SkillIcon, ApplicationSummary, Testimonial, About, ContactMe, SkillMarquee, ContactInfo }
 }
 </script>
 
@@ -296,6 +300,10 @@ export default {
 .text-heading:nth-child(3){
   opacity: 0;
   animation-delay: 900ms;
+}
+.text-heading:nth-child(4){
+  opacity: 0;
+  animation-delay: 1200ms;
 }
 
 @keyframes slideup{

@@ -3,7 +3,7 @@
     <div
       class="h-28 w-1/3 bg-violet-500 blur-md inset-0 absolute rounded-t-sm m-auto top-0 bottom-0 left-0 right-0 sm:block hidden opacity-0 group-hover:opacity-100 shadow-perspective">
     </div>
-    <p class="relative text-lg opacity-0 group-hover:opacity-100">
+    <p class="relative text-lg sm:opacity-0 group-hover:opacity-100">
       {{ title }}
     </p>
     <img :src="img" :alt="title" :title="title"

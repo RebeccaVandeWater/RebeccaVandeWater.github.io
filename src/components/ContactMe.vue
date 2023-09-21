@@ -35,7 +35,7 @@
       <div class="text-end m-2 mt-3">
         <button
           class="bg-green-400 text-black rounded-lg p-1 px-3 font-semibold shadow-lg shadow-green-600/50 hover:shadow-green-400/50"
-          role="submit" title="send">
+          type="submit" title="send">
           Send
         </button>
       </div>
