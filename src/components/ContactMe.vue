@@ -12,27 +12,27 @@
 
       <!-- <input type="hidden" name="_next" value="https://rebeccavandewater.github.io/Success.vue"> -->
 
-      <div class="flex flex-col sm:flex-row justify-around">
-        <div class="m-2">
+      <div class="flex flex-col md:flex-row justify-center items-center">
+        <div class="m-2 flex flex-col w-full">
           <label for="firstName" class="text-white">First Name</label>
-          <input type="text" name="firstName" id="firstName" title="first name" class="w-full pl-2" minlength="3"
+          <input type="text" name="firstName" id="firstName" title="first name" class="pl-2" minlength="3"
             maxlength="50" required>
         </div>
-        <div class="m-2">
+        <div class="m-2 flex flex-col w-full">
           <label for="lastName" class="text-white">Last Name</label>
-          <input type="text" name="lastName" id="lastName" title="last name" class="w-full pl-2" minlength="3"
+          <input type="text" name="lastName" id="lastName" title="last name" class="pl-2" minlength="3"
             maxlength="50" required>
         </div>
       </div>
-      <div class="flex flex-col sm:flex-row justify-around">
-        <div class="m-2">
+      <div class="flex flex-col md:flex-row justify-center items-center w-full">
+        <div class="m-2 flex flex-col w-full">
           <label for="email" class="text-white">E-mail</label>
-          <input type="email" name="email" id="email" title="email" class="w-full pl-2" minlength="10" maxlength="100"
+          <input type="email" name="email" id="email" title="email" class="pl-2" minlength="10" maxlength="100"
             required>
         </div>
-        <div class="m-2">
+        <div class="m-2 flex flex-col w-full">
           <label for="phone" class="text-white">Phone Number</label>
-          <input type="tel" id="phone" name="phone" title="phone number" class="w-full pl-2" maxlength="50">
+          <input type="tel" id="phone" name="phone" title="phone number" class="pl-2" maxlength="50">
         </div>
       </div>
       <div class="flex flex-col mt-3">

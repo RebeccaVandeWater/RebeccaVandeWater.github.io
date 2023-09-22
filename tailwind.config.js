@@ -29,7 +29,7 @@ export default {
       },
       variants: {
         animation: ['motion-safe', 'motion-reduce']
-      }
+      },
     },
   },
   plugins: [

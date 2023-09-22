@@ -56,14 +56,14 @@
         My Applications
       </p>
     </div>
-    <div class="flex lg:justify-start justify-center mb-10 sm:mb-20 p-5">
-      <div class="flex lg:flex-row flex-col w-5/6 items-center snap-normal fade-in">
-        <div class="lg:w-5/6 lg:mr-5 mb-5 lg:mb-0 select-none" title="JABB Github Link">
+    <div class="flex justify-center mb-5 p-5 px-8 min-h-[75vh]">
+      <div class="flex lg:flex-row flex-col items-center justify-around fade-in">
+        <div class="md:w-2/3 lg:w-1/2 lg:mr-8 mb-5 lg:mb-0 select-none" title="JABB Github Link">
           <a href="https://github.com/jaredrcarlson/bookclub" aria-label="JABB Github Link">
             <img :src="jabbImg" alt="JABB Book Club" class="object-contain object-center rounded-md shadow-lg shadow-violet-500">
           </a>
         </div>
-        <div class="w-full font-montserrat">
+        <div class="lg:w-1/2 font-montserrat">
           <p class="mb-2 text-xl font-medium">
             JABB Book Club
           </p>
@@ -83,14 +83,9 @@
         </div>
       </div>
     </div>
-    <div class="flex lg:justify-end justify-center my-10 sm:my-20 p-5">
-      <div class="flex lg:flex-row flex-col w-5/6 items-center snap-normal fade-in">
-        <div class="lg:w-5/6 lg:mr-5 mb-5 lg:mb-0 select-none" title="Keepr Github Link">
-          <a href="https://github.com/RebeccaVandeWater/KeeprVande" aria-label="Keepr Github Link">
-            <img :src="keeprImg" alt="Keepr" class="object-contain object-center shadow-lg rounded-md shadow-violet-500">
-          </a>
-        </div>
-        <div class="w-full font-montserrat">
+    <div class="flex justify-center my-5 p-5 px-8 min-h-[75vh]">
+      <div class="flex lg:flex-row flex-col items-center justify-around fade-in">
+        <div class="lg:w-1/2 font-montserrat order-2 lg:order-1">
           <p class="mb-2 text-xl font-medium">
             Keepr
           </p>
@@ -108,16 +103,21 @@
             <img :src="postmanLogo" alt="Postman" class="object-contain object-center w-1/6 m-3 skill fade-in" title="Postman">
           </div>
         </div>
+        <div class="md:w-2/3 lg:w-1/2 lg:ml-8 mb-5 lg:mb-0 select-none order-1 lg:order-2" title="Keepr Github Link">
+          <a href="https://github.com/RebeccaVandeWater/KeeprVande" aria-label="Keepr Github Link">
+            <img :src="keeprImg" alt="Keepr" class="object-contain object-center shadow-lg rounded-md shadow-violet-500">
+          </a>
+        </div>
       </div>
     </div>
-    <div class="flex lg:justify-start justify-center my-10 sm:my-20 p-5">
-      <div class="flex lg:flex-row flex-col w-5/6 items-center snap-normal fade-in">
-        <div class="lg:w-5/6 lg:mr-5 mb-5 lg:mb-0 select-none" title="Tower Github Link">
+    <div class="flex justify-center my-5 p-5 px-8 min-h-[75vh]">
+      <div class="flex lg:flex-row flex-col items-center justify-around fade-in">
+        <div class="md:w-2/3 lg:w-1/2 lg:mr-8 mb-5 lg:mb-0 select-none" title="Tower Github Link">
           <a href="https://github.com/RebeccaVandeWater/Tower-vande" aria-label="Tower Github Link">
             <img :src="towerImg" alt="Tower" class="object-contain object-center shadow-lg shadow-violet-500 rounded-md">
           </a>
         </div>
-        <div class="w-full font-montserrat">
+        <div class="lg:w-1/2 font-montserrat">
           <p class="mb-2 text-xl font-medium">
             Tower
           </p>
