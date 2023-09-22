@@ -4,6 +4,14 @@
       Contact Me
     </p>
     <form action="https://formsubmit.co/e7150035c2a3558389d582f5ae519429" method="POST" class="flex flex-col">
+      <!-- Spam Catch -->
+      <input type="text" name="_spam" style="display: none;">
+
+      <!-- Disable Captcha -->
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- <input type="hidden" name="_next" value="https://rebeccavandewater.github.io/Success.vue"> -->
+
       <div class="flex flex-col sm:flex-row justify-around">
         <div class="m-2">
           <label for="firstName" class="text-white">First Name</label>
