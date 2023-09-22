@@ -1,7 +1,18 @@
-# Vue 3 + Vite
+# My Landing Page!
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Welcome to my landing page! This website was a fun front-end challenge for me. 
 
-## Recommended IDE Setup
+At the time that I built this website, I had built many webpages that were static, meaning that they didn't really have any animations outside of toast notifications. I also built them to pre-determined UI/UX specifications.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+For this website, I wanted to challenge myself to do some new things that would make my website pop. This included plenty of CSS Animations and scrapping multiple design concepts until I found one that not only felt right, but looked great!
+
+Check out my front end stack below!
+
+## My Build
+
+- Vue / Vite Framework
+
+- Tailwind CSS Toolkit
+
+- Github Pages Deployment
+
