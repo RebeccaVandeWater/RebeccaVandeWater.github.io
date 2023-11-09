@@ -7,7 +7,7 @@
       <a href="https://github.com/RebeccaVandeWater" aria-label="Github Hyperlink"><svg-icon type="mdi" :path="path2"></svg-icon></a>
     </button>
     <button class="me-4 p-1 px-2 rounded-lg bg-gray-50 hover:bg-white shadow-sm shadow-gray-950 hover:scale-105" title="Resume">
-      <a :href="Resume" download class="flex"  aria-label="Resume Download Link"><svg-icon type="mdi" :path="path3"></svg-icon><span class="italic">Resume</span></a>
+      <a :href="resume" download class="flex"  aria-label="Resume Download Link"><svg-icon type="mdi" :path="path3"></svg-icon><span class="italic">Resume</span></a>
     </button>
   </div>
 </template>
@@ -17,7 +17,7 @@ import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiLinkedin } from '@mdi/js';
 import { mdiGithub } from '@mdi/js';
 import { mdiDownload } from '@mdi/js';
-import Resume from '../assets/Resume VandeWater.pdf'
+import resume from '../assets/Resume VandeWater.pdf'
 
 export default {
   name: "my-component",
@@ -27,7 +27,7 @@ export default {
       path: mdiLinkedin,
       path2: mdiGithub,
       path3: mdiDownload,
-      Resume
+      resume
     }
   },
   components: {SvgIcon}
